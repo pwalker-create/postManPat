@@ -4,27 +4,47 @@ html {
     background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
 }
 
-.mainPage {
-    width: 800px;
-    border: 1px solid black;
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.intro-content {
+    flex: 1; 
+}
+
+.skills-list {
+    flex: 1;
+    background-color: #eee;
+
+}
+
+.main-page {
+    padding: 10px;
+    border-radius: 8px; /*makes rounded edges of box*/
     background-color: white;
-    margin: 5vh auto auto auto;
-    box-shadow: 10px 10px 8px #bdc3c7; /*urgh don't love this, but like the concept. Want to talk to ED about the different colours from different directions */
+    box-shadow: -10px -10px 10px 5px /* horizontalOffset verticalOffset blur spread */;   
+    margin: 10px auto;
+    width:70vw;
+    max-width: 630px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .container {
+    width: 200px;
+    height: 200px; 
     border: 1px solid black;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    width: 45%;
-    float: left;
-
-
+    margin: 20px
 }
 
 .dp {
     border-radius: 50%;
 }
+
+/*notes on floats, they pop the content out of the visual layer and can result in losing styling. Better to use Flex*/
